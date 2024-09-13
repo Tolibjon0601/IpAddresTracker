@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BASE_URL, IP_KEY_IpTracker } from "./services/api";
 import "./App.css";
-import Card from "./assets/components/card";
+import Card from "./assets/components/card/card";
 import LeafletMap from "./assets/components/leaflet/leaflet";
 
 function App() {
@@ -20,11 +20,11 @@ function App() {
   return (
     <>
 <div className=" min-w-full search-bar-container bg-cover flex flex-col  justify-center items-center gap-8  " >
-<h1 className="text-white font-bold items-center mt-1 mb-1 text-3xl">IP Address Tracker</h1>
+<h1 className="text-white font-bold items-center mt-16 mb-1 text-3xl">IP Address Tracker</h1>
    <div className=" flex justify-center items-center h-10 ">
    <form onSubmit={submitHandler}>
         <input
-          className="rounded-md  py-3 px-60 text-left mt-4 mb-11 text-xl "
+          className="rounded-md  py-3 px-60 text-left text-xl "
           placeholder="Search for any IP addres"
           value={ipValue}
           onChange={(evt) => setIpValue(evt.target.value)}
