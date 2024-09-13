@@ -24,7 +24,7 @@ function App() {
    <div className=" flex justify-center items-center h-10 ">
    <form onSubmit={submitHandler}>
         <input
-          className="rounded-md  py-3 px-60 text-left mt-4 mb-11 text-xl"
+          className="rounded-md  py-3 px-60 text-left mt-4 mb-11 text-xl "
           placeholder="Search for any IP addres"
           value={ipValue}
           onChange={(evt) => setIpValue(evt.target.value)}
